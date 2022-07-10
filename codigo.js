@@ -58,7 +58,7 @@ function mostrarPalabra() {
     for (i = 0; i < palabraOc.length; i++){
         campoPalabra.childNodes[i].innerHTML = palabraOc[i];
     }
-    intentos.innerHTML = "Perdiste";
+    intentos.innerHTML = "GAME OVER";
     dibujarPerdido();
     inhabilitar();
 }
@@ -118,7 +118,7 @@ function letraErronea(key) {
             }      
 
             if (vidas <= 0) {
-                intentos.innerHTML = "Te quedaste sin intentos. Perdiste";
+                intentos.innerHTML = "Te quedaste sin intentos. GAME OVER";
                 dibujarPiernaI();
                 mostrarPalabra()
             }
@@ -162,7 +162,7 @@ teclaPresionada.addEventListener("keydown", function (event) {
         } 
         verificarTecla(key);
         if (letrasPalabra == cantidadLetras) {
-            intentos.innerHTML = "GANASTE!";
+            intentos.innerHTML = "FELICIDADES! GANASTE!";
             dibujarGanado();
             filtro = "";
         }
