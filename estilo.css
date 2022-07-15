@@ -1,30 +1,63 @@
-*{
-    font-family: sans-serif
+body{
+    background-image: url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+
+header{
+    height: 5%;
+    background: #252739; 
 
 }
 
-body{
-    background-image: url("fondo.jpg");
-    background-size: cover;
+.titulo{
+    color: #ffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 100%;    
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo{
+    background: #FF2727;
+    border: 3px solid black;
+    width: 6%;
+    position: absolute;
+    top:0px;
 }
 
 .section-1{
-    height: 50%;
-    position: relative;
+    display: flex;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-2{
+    display: flex;
+    height: 45%;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+
+    
 }
 
 .btn-inicio{
     font-size: 35px;
-    position: absolute;
-    z-index: 1;
-    top: 220px;
-    left: 530px;
     padding: 30px;
     border-radius: 13px;
     background: #6E0707;
     font-weight: bolder;
     color: white;
     
+
 }
 
 .btn-inicio:hover{
@@ -34,25 +67,13 @@ body{
 
 
 .canvas{
-    height: 250px;
-    margin: 20px 0px 30px 420px;
+    height: 250px;   
     border: 3px solid red;
     background: #252739;
     border-radius: 10px;
 }
 
-#contenedor-form{
-    margin-left: 500px;
-    margin-top: 30px   ;
-}
 
-
-
-#palabra{
-    margin-top: 20px;
-    font-size: 40px;
-    text-transform: uppercase;
-}
 
 #intentos{
     display: flex;
@@ -71,9 +92,6 @@ body{
     text-align: center;
 }
 
-#boton{
-    padding: 10px;
-}
 
 .campo-falladas{
     display: flex;
@@ -100,7 +118,7 @@ body{
     justify-content: center;
     font-size: 24px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .campo-letra{
@@ -116,18 +134,21 @@ body{
 
 }
 
+.container-botones{
+    align-self: center;
+    margin-top: 15px;
+}
+
 .btn-rendirse{
     font-size: 15px;
-    position: absolute;
     padding: 15px;
     border-radius: 10px;
     background: red;
-    left: 690px;
-    margin-top: 25px;
     margin-left: 20px;
     border: 3px solid #1C0505;
     color: white;
     font-weight: bolder;
+
 }
 
 .btn-rendirse:hover{
@@ -137,16 +158,12 @@ body{
 
 .btn-nueva-palabra{
     font-size: 15px;
-    position: absolute;
     padding: 15px;
     border-radius: 10px;
     background: red;
-    left: 520px;
-    margin-top: 25px;
     border: 3px solid #1C0505;
     color: white;
     font-weight: bolder;
-    
 }
 
 .btn-nueva-palabra:hover{
@@ -154,7 +171,36 @@ body{
     background-color:#FF2727;
 }
 
+footer{
+    display: flex;
+    height: 5%;
+    background:#252739 ;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.info{
+    color: #fff;
+    height: 100%;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.linked{
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linked:hover{
+    color: red;
+}
+
 .ocultar{
     display: none;
 }
-
