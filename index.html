@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <title>Juego del ahorcado</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="hola" class="btn-inicio">Iniciar Juego</button>
+    <header>
+        <p class="titulo">Juego del Ahorcado</p>
+        <img class="logo" src="../Challenge 2 - Ahorcado/imagenes/Logo.png" alt="Imagen de Alura">
+    </header>
     <section class="section-1">
+        <button id="hola" class="btn-inicio">Iniciar Juego</button>
         <canvas class="canvas ocultar">
-
         </canvas>
     </section>
     <section class="section-2">
             <div id="intentos">
             </div>
-            <div id="palabra">
+            <div id="palabra" class="ocultar"> 
             </div>
             <div class="container-palabra">
             </div>
             <div class="container-falladas">
             </div>
-            <button class="btn-rendirse ocultar">RENDIRSE</button>
-            <button class="btn-nueva-palabra ocultar">NUEVA PALABRA</button>
+            <div class="container-botones">
+                <button class="btn-rendirse ocultar">RENDIRSE</button>
+                <button class="btn-nueva-palabra ocultar">NUEVA PALABRA</button>
+            </div>
     </section> 
+    <footer>
+        <p class="info">Alura, todos los derechos reservados</p>
+        <a class="linked" href="https://www.linkedin.com/in/santiago-moreno-fernandez/">LinkedIn</a>
+    </footer>
     <script src="codigo.js"></script>
     <script src="canvas.js"></script>
 </body>
